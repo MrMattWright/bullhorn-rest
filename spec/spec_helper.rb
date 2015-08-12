@@ -59,21 +59,22 @@ VCR.configure do |c|
 
   
   c.allow_http_connections_when_no_cassette = true
+  #c.ignore_hosts 'auth.bullhornstaffing.com', 'rest22.bullhornstaffing.com', 'rest.bullhornstaffing.com'
 end
 
 
 def test_bh_username
-  ENV.fetch 'BH_TEST_USERNAME', 'bh_username'
+  ENV.fetch 'BH_TEST_USERNAME', 'BH_TEST_USERNAME'
 end
 
 def test_bh_password
-  ENV.fetch 'BH_TEST_PASSWORD', 'bh_password'
+  ENV.fetch 'BH_TEST_PASSWORD', 'BH_TEST_PASSWORD'
 end
 
 def test_bh_client_id
-  ENV.fetch 'BH_TEST_CLIENT_ID', 'bh_client_id'
+  ENV.fetch 'BH_TEST_CLIENT_ID', 'BH_TEST_CLIENT_ID'
 end
 
 def test_bh_client_secret
-  ENV.fetch 'BH_TEST_CLIENT_SECRET', 'bh_client_secret'
+  ENV.fetch 'BH_TEST_CLIENT_SECRET', 'BH_TEST_CLIENT_SECRET'
 end
